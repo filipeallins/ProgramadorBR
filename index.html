@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .flex-container {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 600px;
+  }
+  .left {
+    padding-bottom: 20px;
+    margin: 25px;
+    align-self: center;
+    width: 190px;
+    text-align: center;
+  }
+  .right {
+    width: 390px;
+    text-align: right;
+  }
+  .vRed {
+    border-left: 20px solid red;
+    height: 150px;
+  }
+  .vBlack {
+    border-left: 20px solid black;
+    height: 150px;
+  }
+  .vLine {
+    align-self: center;
+    flex-direction: column;
+  }
+  p.break {
+    margin: 0;
+  }
+  #cargo {
+    text-align: center;
+  }
+  #icon {
+    color: red;
+    font-size: 20px;
+    margin-left: 10px;
+
+  }
+  #inicial {
+    color: red;
+    font-size: 100px;
+  }
+  #nome {
+    font-size: 40px;
+  }
+  #nomeC {
+    font-size: 27px;
+  }
+  #red {
+    color: red;
+  }
+  </style>
+  <title>Cartão de visitas</title>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="left">
+      <p class="break" id="inicial">F</p>
+      <p class="break" id="nome">Filipe</p>
+    </div>
+    <div class="vLine">
+      <div class="vRed"></div>
+      <div class="vBlack"></div>
+    </div>
+    <div class="right">
+      <p class="break" id="nomeC">Filipe <i id="red">Augusto Lima Lins</i></p>
+      <p class="break" id="cargo">Desenvolvedor Front-End</p>
+      <br>
+      <p>Rua Local, 123.<br>
+        Rio de Janeiro, RJ</p>
+      <br>
+      <p>(999)999-999<i id="icon" class="fa fa-mobile"></i></p>
+      <p>contato@contato.com<i id="icon" class="fa fa-at"></i></p>
+      <p>filipelins.com.br<i id="icon" class="fa fa-laptop"></i></p>
+    </div>
+  </div>
+</body>
+</html>
